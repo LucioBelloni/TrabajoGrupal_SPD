@@ -1,0 +1,56 @@
+17:03:02 **** Rebuild of configuration Debug for project TrabajoGrupal_SPD ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TrabajoGrupal_SPD.o" "..\\src\\TrabajoGrupal_SPD.c" 
+..\src\TrabajoGrupal_SPD.c: In function 'setup':
+..\src\TrabajoGrupal_SPD.c:48:5: warning: implicit declaration of function 'pinMode' [-Wimplicit-function-declaration]
+     pinMode(i,OUTPUT);
+     ^~~~~~~
+..\src\TrabajoGrupal_SPD.c:48:15: error: 'OUTPUT' undeclared (first use in this function)
+     pinMode(i,OUTPUT);
+               ^~~~~~
+..\src\TrabajoGrupal_SPD.c:48:15: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TrabajoGrupal_SPD.c: In function 'EncenderH':
+..\src\TrabajoGrupal_SPD.c:79:3: warning: implicit declaration of function 'digitalWrite' [-Wimplicit-function-declaration]
+   digitalWrite(LED_B, HIGH);
+   ^~~~~~~~~~~~
+..\src\TrabajoGrupal_SPD.c:79:23: error: 'HIGH' undeclared (first use in this function)
+   digitalWrite(LED_B, HIGH);
+                       ^~~~
+..\src\TrabajoGrupal_SPD.c:84:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay(tiempo);
+   ^~~~~
+..\src\TrabajoGrupal_SPD.c: In function 'ApagarH':
+..\src\TrabajoGrupal_SPD.c:90:23: error: 'LOW' undeclared (first use in this function)
+   digitalWrite(LED_B, LOW);
+                       ^~~
+..\src\TrabajoGrupal_SPD.c: In function 'EncenderO':
+..\src\TrabajoGrupal_SPD.c:102:23: error: 'HIGH' undeclared (first use in this function)
+   digitalWrite(LED_C, HIGH);
+                       ^~~~
+..\src\TrabajoGrupal_SPD.c: In function 'ApagarO':
+..\src\TrabajoGrupal_SPD.c:115:23: error: 'LOW' undeclared (first use in this function)
+   digitalWrite(LED_C, LOW);
+                       ^~~
+..\src\TrabajoGrupal_SPD.c: In function 'EncenderL':
+..\src\TrabajoGrupal_SPD.c:128:23: error: 'HIGH' undeclared (first use in this function)
+   digitalWrite(LED_D, HIGH);
+                       ^~~~
+..\src\TrabajoGrupal_SPD.c: In function 'ApagarL':
+..\src\TrabajoGrupal_SPD.c:137:23: error: 'LOW' undeclared (first use in this function)
+   digitalWrite(LED_D, LOW);
+                       ^~~
+..\src\TrabajoGrupal_SPD.c: In function 'EncenderA':
+..\src\TrabajoGrupal_SPD.c:145:23: error: 'HIGH' undeclared (first use in this function)
+   digitalWrite(LED_C, HIGH);
+                       ^~~~
+..\src\TrabajoGrupal_SPD.c: In function 'ApagarA':
+..\src\TrabajoGrupal_SPD.c:158:23: error: 'LOW' undeclared (first use in this function)
+   digitalWrite(LED_C, LOW);
+                       ^~~
+..\src\TrabajoGrupal_SPD.c: In function 'EncenderApagar':
+..\src\TrabajoGrupal_SPD.c:170:21: error: 'HIGH' undeclared (first use in this function)
+   digitalWrite(led, HIGH);
+                     ^~~~
+..\src\TrabajoGrupal_SPD.c:172:21: error: 'LOW' undeclared (first use in this function)
+   digitalWrite(led, LOW);
+                     ^~~
