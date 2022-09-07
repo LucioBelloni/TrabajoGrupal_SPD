@@ -1,4 +1,4 @@
-17:03:02 **** Rebuild of configuration Debug for project TrabajoGrupal_SPD ****
+17:22:51 **** Incremental Build of configuration Debug for project TrabajoGrupal_SPD ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TrabajoGrupal_SPD.o" "..\\src\\TrabajoGrupal_SPD.c" 
 ..\src\TrabajoGrupal_SPD.c: In function 'setup':

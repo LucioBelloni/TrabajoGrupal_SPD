@@ -1,13 +1,15 @@
-/*	Monsalvo Ivan
- 	Lucio Belloni
- 	Acuña Lucas
- 	Carmagnola Lucas
- 	Alvarez Lopez Sebastian
- 	Maximo Pasqui
- 	Bermudez Juan
- 	Castillo Brandon
- 	Agustin Calzone
-*/
+/*
+ ============================================================================
+ Name        : TrabajoGrupal_SPD.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define LED_C 6
 #define LED_D 7
@@ -18,11 +20,8 @@
 #define LED_G 12
 
 #define LED_2 2
-#define LED_3 3
 
 #define TIEMPO 500
-#define TIEMPO_CORTO 300
-#define TIEMPO_LARGO 750
 
 
 #define TAM 7
@@ -49,8 +48,7 @@ void setup()
     pinMode(i,OUTPUT);
   }
 
-  pinMode(LED_2,OUTPUT);
-  pinMode(LED_3,OUTPUT);
+  pinMode(2,OUTPUT);
 }
 
 void loop()
@@ -58,57 +56,19 @@ void loop()
   EncenderH(TIEMPO);
   ApagarH(TIEMPO);
 
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-
-
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
+  EncenderApagar(2, 500);
+  EncenderApagar(2, 500);
+  EncenderApagar(2, 500);
+  EncenderApagar(2, 500);
 
   EncenderO(TIEMPO);
   ApagarO(TIEMPO);
 
-  EncenderApagar(LED_2, TIEMPO_LARGO);
-  EncenderApagar(LED_2, TIEMPO_LARGO);
-  EncenderApagar(LED_2, TIEMPO_LARGO);
-
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-
-
-
-
   EncenderL(TIEMPO);
   ApagarL(TIEMPO);
 
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_LARGO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_LARGO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-
   EncenderA(TIEMPO);
   ApagarA(TIEMPO);
-
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_LARGO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-  EncenderApagar(LED_2, TIEMPO_CORTO);
-
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_LARGO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-  EncenderApagar(LED_3, TIEMPO_CORTO);
-
 
 
 
@@ -212,7 +172,4 @@ void EncenderApagar(int led, int tiempo)
   digitalWrite(led, LOW);
   delay(tiempo);
 }
-
-
-
 
